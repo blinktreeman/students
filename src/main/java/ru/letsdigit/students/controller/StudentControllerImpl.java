@@ -13,12 +13,12 @@ import java.util.UUID;
 
 @Controller
 @RequestMapping(value = "/student")
-public class StudentController implements IStudentController {
+public class StudentControllerImpl implements IStudentController {
 
     private final IStudentService studentService;
 
     @Autowired
-    public StudentController(IStudentService studentService) {
+    public StudentControllerImpl(IStudentService studentService) {
         this.studentService = studentService;
     }
 
