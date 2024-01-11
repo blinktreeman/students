@@ -8,6 +8,6 @@ import java.util.UUID;
 
 @Repository
 public interface IStudentRepository extends JpaRepository<Student, UUID> {
-    Iterable<Student> findAllByNameContaining(String name);
+    Iterable<Student> findAllByNameContains(String name);
     Iterable<Student> findAllByGroupName(String groupName);
 }

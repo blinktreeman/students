@@ -9,7 +9,7 @@ public interface IStudentService {
     Student save(Student student);
     Optional<Student> findById(UUID uuid);
     Iterable<Student> findAll();
-    Iterable<Student> findAllByNameContaining(String name);
+    Iterable<Student> findAllByNameContains(String name);
     Iterable<Student> findAllByGroupName(String groupName);
     void deleteById(UUID uuid);
 }

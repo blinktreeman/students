@@ -34,8 +34,8 @@ public class StudentServiceImpl implements IStudentService {
     }
 
     @Override
-    public Iterable<Student> findAllByNameContaining(String name) {
-        return studentRepository.findAllByNameContaining(name);
+    public Iterable<Student> findAllByNameContains(String name) {
+        return studentRepository.findAllByNameContains(name);
     }
 
     @Override
